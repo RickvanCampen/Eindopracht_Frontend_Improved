@@ -28,7 +28,7 @@ const SignUpComponent = () => {
         telefoonnummer: '',
     });
 
-    // Functie om het formulier te valideren
+
     const validateForm = () => {
         const newErrors = {};
 
@@ -59,12 +59,12 @@ const SignUpComponent = () => {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value }); // Bijwerken van de formuliergegevens
+        setFormData({ ...formData, [name]: value });
     };
 
     const handleFileChange = (e) => {
         const file = e.target.files[0];
-        setFormData({ ...formData, profielfoto: file }); // Bijwerken van de profielfoto in de formuliergegevens
+        setFormData({ ...formData, profielfoto: file });
     };
 
 
@@ -74,9 +74,8 @@ const SignUpComponent = () => {
 
         if (validateForm()) {
 
-            updateUser(formData); // Update de gebruikersgegevens met de nieuwe registratiegegevens
-            setSuccessMessage('Uw gegevens zijn succesvol geregistreerd, u kunt nu inloggen!'); // Toon een succesbericht
-            // Reset het formulier en validatiefouten
+            updateUser(formData);
+            setSuccessMessage('Uw gegevens zijn succesvol geregistreerd, u kunt nu inloggen!');
             setFormData({
                 gebruikersnaam: '',
                 email: '',
@@ -102,13 +101,12 @@ const SignUpComponent = () => {
     };
 
     return (
-        <div className="registreren-inhoud"> {/* Hoofdcontainer voor registratieformulier */}
-            <h2>Registreren</h2> {/* Titel van het registratieformulier */}
-            {successMessage && <div style={{ color: '#0df541' }}>{successMessage}</div>} {/* Toon succesbericht als deze bestaat */}
-            <form onSubmit={handleSubmit}> {/* Formulier voor het indienen van registratiegegevens */}
-                <div> {/* Container voor het invoeren van de profielfoto */}
-                    <label>Profielfoto:</label> {/* Label voor het invoeren van de profielfoto */}
-                    {/* Invoerelement voor het uploaden van een profielfoto */}
+        <div className="registreren-inhoud">
+            <h2>Registreren</h2>
+            {successMessage && <div style={{ color: '#0df541' }}>{successMessage}</div>}
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label>Profielfoto:</label>
                     <input
                         type="file"
                         accept="image/*"
@@ -124,7 +122,6 @@ const SignUpComponent = () => {
                             fontSize: '10px'
                         }}
                     />
-                    {/* Als er een profielfoto is geselecteerd, toon een voorbeeld */}
                     {formData.profielfoto && (
                         <div>
                             <img
@@ -136,7 +133,6 @@ const SignUpComponent = () => {
                         </div>
                     )}
                 </div>
-                {/* Invoerveld voor gebruikersnaam */}
                 <div>
                     <label>
                         Gebruikersnaam<span style={{ color: '#0df541' }}>*</span>:
@@ -149,7 +145,6 @@ const SignUpComponent = () => {
                         required
                     />
                 </div>
-                {/* Invoerveld voor e-mail */}
                 <div>
                     <label>
                         E-mail<span style={{ color: '#0df541' }}>*</span>:
@@ -163,7 +158,6 @@ const SignUpComponent = () => {
                     />
                     {errors.email && <div style={{ color: 'red' }}>{errors.email}</div>}
                 </div>
-                {/* Invoerveld voor wachtwoord */}
                 <div>
                     <label>
                         Wachtwoord<span style={{ color: '#0df541' }}>*</span>:
@@ -177,7 +171,6 @@ const SignUpComponent = () => {
                     />
                     {errors.wachtwoord && <div style={{ color: 'red' }}>{errors.wachtwoord}</div>}
                 </div>
-                {/* Invoerveld voor herhaal wachtwoord */}
                 <div>
                     <label>
                         Herhaal wachtwoord<span style={{ color: '#0df541' }}>*</span>:
@@ -191,7 +184,6 @@ const SignUpComponent = () => {
                     />
                     {errors.herhaalWachtwoord && <div style={{ color: 'red' }}>{errors.herhaalWachtwoord}</div>}
                 </div>
-                {/* Invoerveld voor voornaam */}
                 <div>
                     <label>
                         Voornaam<span style={{ color: '#0df541' }}>*</span>:
@@ -204,7 +196,6 @@ const SignUpComponent = () => {
                         required
                     />
                 </div>
-                {/* Invoerveld voor achternaam */}
                 <div>
                     <label>
                         Achternaam<span style={{ color: '#0df541' }}>*</span>:
@@ -217,7 +208,6 @@ const SignUpComponent = () => {
                         required
                     />
                 </div>
-                {/* Invoerveld voor geboortedatum */}
                 <div>
                     <label>
                         Geboortedatum<span style={{ color: '#0df541' }}>*</span>:
@@ -231,7 +221,6 @@ const SignUpComponent = () => {
                         required
                     />
                 </div>
-                {/* Invoerveld voor telefoonnummer */}
                 <div>
                     <label>
                         Telefoonnummer<span style={{ color: '#0df541' }}>*</span>:
@@ -244,7 +233,6 @@ const SignUpComponent = () => {
                     />
                     {errors.telefoonnummer && <div style={{ color: 'red' }}>{errors.telefoonnummer}</div>}
                 </div>
-                {/* Invoerveld voor adres */}
                 <div>
                     <label>
                         Adres:
@@ -256,7 +244,6 @@ const SignUpComponent = () => {
                         onChange={handleInputChange}
                     />
                 </div>
-                {/* Invoerveld voor postcode */}
                 <div>
                     <label>
                         Postcode<span style={{ color: '#0df541' }}>*</span>:
@@ -269,7 +256,6 @@ const SignUpComponent = () => {
                         required
                     />{errors.postcode && <div style={{ color: 'red' }}>{errors.postcode}</div>}
                 </div>
-                {/* Invoerveld voor stad */}
                 <div>
                     <label>
                         Stad:
@@ -281,7 +267,6 @@ const SignUpComponent = () => {
                         onChange={handleInputChange}
                     />
                 </div>
-                {/* Knop voor het indienen van het registratieformulier */}
                 <button
                     type="submit"
                     className="custom-submit-button"

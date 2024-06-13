@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext } from 'react';
 
-// Creëert een context voor authenticatie
+
 export const AuthContext = React.createContext(undefined);
 
 
@@ -8,7 +8,7 @@ export function useAuth() {
     return useContext(AuthContext);
 }
 
-// Creëert een context voor gebruikersgegevens
+
 export const UserContext = createContext(undefined);
 
 
@@ -20,7 +20,7 @@ export function useUser() {
 export const UserProvider = ({ children }) => {
     const [userData, setUserData] = useState(null);
 
-    // Functie om gebruikersgegevens bij te werken
+
     const updateUser = (data) => {
         setUserData(data);
     };
@@ -55,19 +55,18 @@ export function AuthProvider({ children }) {
         }
     };
 
-    // Functie om uit te loggen
+
     const logout = () => {
         setUser(null);
     };
 
-    // Functie om te registreren
+
     const register = async (userData) => {
         try {
             const response = await fetch('https://api.datavortex.nl/NOVI Educational Backend/users', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    // Hier wordt een API-sleutel gebruikt voor authenticatie
                     'X-Api-Key': 'eindopdracht:3A0QHhPmag2XQ02xb2U3'
                 },
                 body: JSON.stringify(userData),
