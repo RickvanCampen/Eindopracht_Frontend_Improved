@@ -1,16 +1,18 @@
 # Installatiehandleiding
 
 ## Inhoudsgave
-- inleiding
-- overzicht screenshits applicatie
-- informatie runtime environments
-- benodidheden
-- stappenplan voor installatie
-- registreren en inloggen
-- npm commando's
-- link naar Github repository
 
-## Inleiding 
+- [Inleiding](#Inleiding)
+- [Overzicht screenshots applicatie](#overzicht-screenshots-applicatie)
+- [Informatie runtime environments](#informatie-runtime-environments)
+- [Benodigheden](#benodigheden)
+- [Stappenplan voor installatie](#stappenplan-voor-installatie)
+- [Registreren en inloggen](#registreren-en-inloggen)
+- [NPM commando's](#npm-commandos)
+- [Link naar Github repository](#link-naar-github-repository)
+
+
+## Inleiding
 Welkom bij de installatiehandleiding van mijn weer-applicatie. Deze handleiding is bedoeld om 
 begeleiding te bieden bij het installeren en configureren van de applicatie. Hierbij is geen 
 voorkennis vereist.
@@ -147,21 +149,25 @@ Wanneer je de weer-applicatie opnieuw opstart kan je je eigen inloggegevens gebr
 mogelijk om helemaal niet te registreren of in te loggen, omdat de weer-applicatie ook werkt zonder dit.
    
 ## Npm commando’s
-- npm run start: Dit commando start de ontwikkelingsserver. Dit zorgt ervoor dat je applicatie 
+- **npm run start:** 
+Dit commando start de ontwikkelingsserver. Dit zorgt ervoor dat je applicatie 
 lokaal draait op een server en opent het in je webbrowser. Als je wijzigingen maakt in de code,
 zal de server deze automatisch oppikken en de applicatie opnieuw laden in de browser. 
 Dit maakt het gemakkelijk om je applicatie te ontwikkelen en direct wijzigingen te zien zonder 
 handmatig te hoeven vernieuwen.
-- npm run build: Dit commando bouwt de productieversie van je applicatie. Dit betekent dat het 
+- **npm run build**
+Dit commando bouwt de productieversie van je applicatie. Dit betekent dat het 
 alle nodige bestanden optimaliseert en samenvoegt. Hierdoor is de applicatie klaar  om te worden
 geüpload naar een webserver. Het resultaat is een set van bestanden die klaar zijn om te worden 
 gebruikt door je website, inclusief HTML, CSS en JavaScript, die niet veranderen tijdens het 
 gebruik van de website.
-- npm run test: Dit commando voert de tests uit die zijn geschreven voor je applicatie. Het zoekt
+- **npm run test**
+Dit commando voert de tests uit die zijn geschreven voor je applicatie. Het zoekt
 naar alle testbestanden in je project en voert ze uit met behulp van een testframework zoals Jest.
 Dit helpt bij het controleren of je code correct werkt en of er geen fouten zijn opgetreden
 tijdens het ontwikkelproces.
-- npm run eject: Dit commando wordt gebruikt om de standaardconfiguratie van Create React App 
+- **npm run eject**
+Dit commando wordt gebruikt om de standaardconfiguratie van Create React App 
 te vervangen door een meer geavanceerde configuratie. Hierdoor krijg je volledige controle over 
 de instellingen van je project. Het wordt meestal gebruikt wanneer je meer geavanceerde opties 
 nodig hebt die niet beschikbaar zijn in de standaardconfiguratie van Create React App.
