@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { UserContext } from '../Auth/gebruikersauthenticatiegegevens';
+import { UserContext } from '../../Context/Auth/gebruikersauthenticatiegegevens';
 
 const ProfielPageComponent = () => {
     const { userData, updateUser } = useContext(UserContext);
