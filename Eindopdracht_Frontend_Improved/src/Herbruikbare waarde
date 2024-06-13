@@ -1,0 +1,44 @@
+Nederlandse dorpen en steden: ['Aarle-Rixtel', 'Alkmaar', 'Almelo', 'Alphen aan den Rijn', 'Alphen-Chaam', 'Amersfoort', 'Amstelveen', 'Amsterdam', 'Apeldoorn', 'Arnhem', 'Assen', 'Asten', 'Baarle-Nassau', 'Barendrecht', 'Barneveld', 'Beek', 'Beek en Donk', 'Beesel', 'Berg en Dal', 'Bergen op Zoom', 'Bergeijk', 'Berkelland', 'Berkel-Enschot', 'Berlicum', 'Bernheze', 'Best', 'Beuningen', 'Bladel', 'Blaricum', 'Bloemendaal', 'Bodegraven-Reeuwijk', 'Boekel', 'Borger-Odoorn', 'Borne', 'Borsele', 'Boxmeer', 'Boxtel', 'Breda', 'Brielle', 'Bronckhorst', 'Brummen', 'Brunssum', 'Bunnik', 'Bunschoten', 'Buren', 'Capelle aan den IJssel', 'Castricum', 'Coevorden', 'Cranendonck', 'Cuijk', 'Culemborg', 'Dalfsen', 'Dantumadiel', 'De Bilt', 'De Fryske Marren', 'De Ronde Venen', 'De Wolden', 'Delft', 'Delfzijl', 'Den Haag', 'Den Helder', 'Deurne', 'Deventer', 'Diemen', 'Dinkelland', 'Doesburg', 'Doetinchem', 'Dongen', 'Dordrecht', 'Drechterland', 'Drimmelen', 'Dronten', 'Druten', 'Duiven', 'Echt-Susteren', 'Edam-Volendam', 'Ede', 'Eemnes', 'Eindhoven', 'Elburg', 'Emmen', 'Enkhuizen', 'Enschede', 'Epe', 'Ermelo', 'Etten-Leur', 'Geertruidenberg', 'Geldrop', 'Geldrop-Mierlo', 'Gemert', 'Gemert-Bakel', 'Gennep', 'Gilze', 'Gilze en Rijen', 'Goeree-Overflakkee', 'Goes', 'Goirle', 'Gooise Meren', 'Gorinchem', 'Gouda', 'Grave', 'Groningen', 'Gulpen-Wittem', 'Haaksbergen', 'Haaren', 'Haarlem', 'Haarlemmermeer', 'Halderberge', 'Hardenberg', 'Harderwijk', 'Hardinxveld-Giessendam', 'Harlingen', 'Hattem', 'Heemskerk', 'Heemstede', 'Heerde', 'Heerenveen', 'Heerhugowaard', 'Heerlen', 'Heesch', 'Heeze', 'Heeze-Leende', 'Heiloo', 'Hellendoorn', 'Hellevoetsluis', 'Helmond', 'Hendrik-Ido-Ambacht', 'Hengelo', 'Het Hogeland', 'Heumen', 'Heusden', 'Hillegom', 'Hilvarenbeek', 'Hilversum', 'Hof van Twente', 'Hollands Kroon', 'Hoogeveen', 'Hoogezand-Sappemeer', 'Hoorn', 'Horst aan de Maas', 'Houten', 'Huizen', 'Hulst', 'IJsselstein', 'Kaag en Braassem', 'Kampen', 'Kapelle', 'Katwijk', 'Kerkrade', 'Koggenland', 'Krimpen aan den IJssel', 'Krimpenerwaard', 'Laarbeek', 'Landerd', 'Landgraaf', 'Landsmeer', 'Langedijk', 'Lansingerland', 'Laren', 'Leeuwarden', 'Leiden', 'Leiderdorp', 'Leidschendam-Voorburg', 'Lelystad', 'Leudal', 'Leusden', 'Lingewaard', 'Lisse', 'Lochem', 'Loon op Zand', 'Losser', 'Maasdriel', 'Maasgouw', 'Maassluis', 'Maastricht', 'Medemblik', 'Meierijstad', 'Meppel', 'Middelburg', 'Midden-Delfland', 'Midden-Drenthe', 'Midden-Groningen', 'Mill en Sint Hubert', 'Moerdijk', 'Molenlanden', 'Montferland', 'Montfoort', 'Mook en Middelaar', 'Neder-Betuwe', 'Nederweert', 'Nieuwegein', 'Nieuwkoop', 'Nijkerk', 'Nijmegen', 'Nissewaard', 'Noardeast-Fryslân', 'Noord-Beveland', 'Noordenveld', 'Noordoostpolder', 'Noordwijk', 'Noordwijkerhout', 'Nuenen', 'Nuenen, Gerwen en Nederwetten', 'Nunspeet', 'Nuth', 'Oegstgeest', 'Oirschot', 'Oisterwijk', 'Oldambt', 'Oldebroek', 'Oldenzaal', 'Olst-Wijhe', 'Ommen', 'Oost Gelre', 'Oosterhout', 'Ooststellingwerf', 'Oostzaan', 'Opmeer', 'Opsterland', 'Oss', 'Oude IJsselstreek', 'Ouder-Amstel', 'Oudewater', 'Overbetuwe', 'Papendrecht', 'Peel en Maas', 'Pekela', 'Pijnacker-Nootdorp', 'Purmerend', 'Putten', 'Raalte', 'Reimerswaal', 'Renkum', 'Renswoude', 'Reusel-De Mierden', 'Rheden', 'Rhenen', 'Ridderkerk', 'Rijssen-Holten', 'Rijswijk', 'Roerdalen', 'Roermond', 'Roosendaal', 'Rotterdam', 'Rozendaal', 'Rucphen', 'Schagen', 'Schaijk', 'Scherpenzeel', 'Schiedam', 'Schiermonnikoog', 'Schouwen-Duiveland', 'Simpelveld', 'Sint Anthonis', 'Sint-Michielsgestel', 'Sittard-Geleen', 'Sliedrecht', 'Sluis', 'Smallingerland', 'Soest', 'Someren', 'Son', 'Son en Breugel', 'Sprang-Capelle', 'Stadskanaal', 'Staphorst', 'Stede Broec', 'Steenbergen', 'Steenwijkerland', 'Stein', 'Stichtse Vecht', 'Súdwest-Fryslân', 'Terneuzen', 'Terschelling', 'Texel', 'Teylingen', 'Tholen', 'Tiel', 'Tietjerksteradeel', 'Tilburg', 'Tubbergen', 'Twenterand', 'Tynaarlo', 'Tytsjerksteradiel', 'Uden', 'Udenhout', 'Uitgeest', 'Uithoorn', 'Urk', 'Utrecht', 'Utrechtse Heuvelrug', 'Vaals', 'Valkenburg aan de Geul', 'Valkenswaard', 'Veendam', 'Veenendaal', 'Veere', 'Veghel', 'Veldhoven', 'Velsen', 'Venlo', 'Venray', 'Vianen', 'Vijfheerenlanden', 'Vlaardingen', 'Vlieland', 'Vlissingen', 'Voerendaal', 'Voorschoten', 'Voorst', 'Vught', 'Waadhoeke', 'Waalre', 'Waalwijk', 'Waardenburg', 'Waddinxveen', 'Wageningen', 'Wassenaar', 'Waterland', 'Weert', 'Weesp', 'Werkendam', 'West Betuwe', 'West Maas en Waal', 'Westerkwartier', 'Westerveld', 'Westervoort', 'Westerwolde', 'Westland', 'Weststellingwerf', 'Westvoorne', 'Wierden', 'Wijchen', 'Wijdemeren', 'Wijk bij Duurstede', 'Winterswijk', 'Woensdrecht', 'Woerden', 'Wormerland', 'Woudenberg', 'Woudrichem', 'Wijk en Aalburg', 'Zaanstad', 'Zaltbommel', 'Zandvoort', 'Zeeland', 'Zeewolde', 'Zeist', 'Zevenaar', 'Zevenbergen', 'Zuidplas', 'Zundert', 'Zutphen', 'Zwartewaterland', 'Zwijndrecht', 'Zwolle' ];
+De data voor het registreren: gebruikersnaam, email, wachtwoord, herhaal wachtwoord, voornaam, achternaam, geboortedatum, telefoonnummer, adres, postcode, stad en profielfoto
+De feestdagen vertaald naar het engels:             case "New Year's Day":
+                                                           return 'Nieuwjaarsdag';
+                                                       case 'Good Friday':
+                                                           return 'Goede Vrijdag';
+                                                       case 'Easter Sunday':
+                                                           return 'Paaszondag';
+                                                       case 'Easter Monday':
+                                                           return 'Tweede Paasdag';
+                                                       case "King's Day":
+                                                           return 'Koningsdag';
+                                                       case 'Liberation Day':
+                                                           return 'Bevrijdingsdag';
+                                                       case 'Ascension Day':
+                                                           return 'Hemelvaartsdag';
+                                                       case 'Pentecost':
+                                                           return 'Pinksteren';
+                                                       case 'Whit Monday':
+                                                           return 'Tweede Pinksterdag';
+                                                       case 'Christmas Day':
+                                                           return 'Eerste Kerstdag';
+                                                       case "St. Stephen's Day":
+                                                           return 'Tweede Kerstdag';
+                                                       default:
+                                                           return englishName;
+
+
+Alle aanwezige imports: import React from 'react';
+                        import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+                        import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+                        import { faCalendarAlt, faSignInAlt, faUser } from '@fortawesome/free-solid-svg-icons';
+                        import WeatherComponent from './components/Weather/WeatherComponent';
+                        import HolidayComponent from './components/Holiday/HolidayComponent';
+                        import LoginComponent from './components/Auth/LoginComponent';
+                        import SevenDayForecast from './components/Weather/SevenDayForecast';
+                        import SignUpComponent from './components/Auth/SignUpComponent';
+                        import ShareWeatherComponent from './components/Weather/ShareWeatherComponent';
+                        import { AuthProvider } from './components/Auth/gebruikersauthenticatiegegevens';
+                        import { UserProvider } from './components/Auth/gebruikersauthenticatiegegevens';
+                        import Navbar from './components/Navbar/Navbar';
+                        import ProfielPageComponent from './components/Profile/ProfielPageComponent';
+                        import NotesSidebar from './components/NoteSidebar/NotesSidebar';
+                        import Notification from './Notification';
