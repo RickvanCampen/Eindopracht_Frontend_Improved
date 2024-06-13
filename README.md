@@ -37,22 +37,22 @@ Nu krijg je eerst een overzicht te zien van de belangrijkste screenshots van de 
 je als gebruiker alvast een beeld krijgt hoe de web-applicatie eruit ziet.
 
 Hier zie je de startpagina waarbij de vakantiedagen ook automatisch verschijnen.
-![img.png](Eindopdracht_Frontend_Improved/screenshot_startpagina.png)
+![img.png](screenshot_startpagina.png)
 
 Hier zie je de pagina met de 7-daagse weersvoorspelling.
-![img.png](Eindopdracht_Frontend_Improved/screenshot_7-daagse_weersvoorspelling.png)
+![img.png](screenshot_7-daagse_weersvoorspelling.png)
 
 Hier zie je de pagina waarbij je het weerbericht kan delen.
-![img.png](Eindopdracht_Frontend_Improved/screenshot_weerbericht_delen.png)
+![img.png](screenshot_weerbericht_delen.png)
 
 Hier zie je de pagina waarbij je kunt registreren.
-![img.png](Eindopdracht_Frontend_Improved/screenshot_registreren.png)
+![img.png](screenshot_registreren.png)
 
 Hier zie je de pagina waarbij je kunt inloggen.
-![img.png](Eindopdracht_Frontend_Improved/screenshot_inloggen.png)
+![img.png](screenshot_inloggen.png)
 
 Hier zie je de pagina waar je jouw profiel kunt bekijken en bewerken.
-![img.png](Eindopdracht_Frontend_Improved/screenshot_profiel.png)
+![img.png](screenshot_profiel.png)
 
 Natuurlijk kan je bij gebruik van de applicatie de lege vakken invullen naar eigen wens.
 

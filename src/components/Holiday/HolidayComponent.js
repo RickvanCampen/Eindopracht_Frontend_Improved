@@ -1,17 +1,14 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import translateHolidayName from '../../Helper_Functie/Vertaling_Feestdagen';
 
 const HolidayComponent = () => {
     const [holidays, setHolidays] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
-
     const [selectedYear, setSelectedYear] = useState(new Date().getFullYear().toString());
-
 
     const selectedCountry = 'NL';
 
-    // Definieert fetchHolidays met useCallback om het te memoriseren en te voorkomen dat het opnieuw wordt gemaakt bij elke re-render
     const fetchHolidays = useCallback(async () => {
         try {
             setLoading(true);
@@ -24,14 +21,12 @@ const HolidayComponent = () => {
 
             const translatedHolidays = newHolidays.map(holiday => ({
                 ...holiday,
-                name: translateHolidayName(holiday.name), // Vertaalt de vakantienaam
+                name: translateHolidayName(holiday.name), // Gebruik de geïmporteerde vertaalfunctie
                 date: formatDate(holiday.date) // Formatteert de datum
             }));
 
-
             setHolidays(translatedHolidays);
         } catch (error) {
-
             setError('Er is een fout opgetreden bij het ophalen van de vakantiegegevens.');
         } finally {
             setLoading(false);
@@ -48,43 +43,12 @@ const HolidayComponent = () => {
                 console.error('Er is een fout opgetreden tijdens het laden van de vakantiegegevens:', error);
             }
         });
-
     }, [fetchHolidays]);
-
-    const translateHolidayName = (englishName) => {
-        switch (englishName) {
-            case "New Year's Day":
-                return 'Nieuwjaarsdag';
-            case 'Good Friday':
-                return 'Goede Vrijdag';
-            case 'Easter Sunday':
-                return 'Paaszondag';
-            case 'Easter Monday':
-                return 'Tweede Paasdag';
-            case "King's Day":
-                return 'Koningsdag';
-            case 'Liberation Day':
-                return 'Bevrijdingsdag';
-            case 'Ascension Day':
-                return 'Hemelvaartsdag';
-            case 'Pentecost':
-                return 'Pinksteren';
-            case 'Whit Monday':
-                return 'Tweede Pinksterdag';
-            case 'Christmas Day':
-                return 'Eerste Kerstdag';
-            case "St. Stephen's Day":
-                return 'Tweede Kerstdag';
-            default:
-                return englishName;
-        }
-    };
 
     const formatDate = (dateString) => {
         const date = new Date(dateString);
         return date.toLocaleDateString('nl-NL');
     };
-
 
     return (
         <div>
