@@ -17,41 +17,41 @@ import Notification from './Notification';
 
 function App() {
     return (
-        <AuthProvider> {/* Biedt authenticatiecontext aan */}
-            <UserProvider> {/* Biedt gebruikerscontext aan */}
-                <Notification /> {/* Toont de meldingscomponent */}
-                <Router> {/* Gebruikt de BrowserRouter voor routing */}
+        <AuthProvider>
+            <UserProvider>
+                <Notification />
+                <Router>
                     <div className="App">
                         <header className="App-header">
-                            <Navbar> {/* Navigatiebalk */}
+                            <Navbar>
                                 <div className="Navbar-left">
-                                    <FontAwesomeIcon icon={faCalendarAlt} /> {/* Weerpictogram */}
-                                    <Link to="/">Weather</Link> {/* Linkt naar weerpagina */}
+                                    <FontAwesomeIcon icon={faCalendarAlt} />
+                                    <Link to="/">Weather</Link>
                                 </div>
                                 <div className="Navbar-center">
-                                    {/* Zoekbalk kan hier worden toegevoegd */}
+
                                 </div>
                                 <div className="Navbar-right">
-                                    <FontAwesomeIcon icon={faUser} /> {/* Gebruikerspictogram */}
-                                    <Link to="/profile">Profiel</Link> {/* Linkt naar profielpagina */}
-                                    <FontAwesomeIcon icon={faSignInAlt} /> {/* Aanmeldingspictogram */}
-                                    <Link to="/login">Login</Link> {/* Linkt naar inlogpagina */}
+                                    <FontAwesomeIcon icon={faUser} />
+                                    <Link to="/profile">Profiel</Link>
+                                    <FontAwesomeIcon icon={faSignInAlt} />
+                                    <Link to="/login">Login</Link>
                                 </div>
                             </Navbar>
                         </header>
                         <div className="content-wrapper">
                             <div className="notes-weather-container">
-                                <NotesSidebar /> {/* Zijbalk met notities */}
-                                <WeatherComponent /> {/* Weercomponent */}
+                                <NotesSidebar />
+                                <WeatherComponent />
                             </div>
                             <Routes> {/* Definieert routes */}
-                                <Route path="/" element={<HolidayComponent />} /> {/* Route naar vakantiepagina */}
-                                <Route path="/holidays" element={<HolidayComponent />} /> {/* Route naar vakantiepagina */}
-                                <Route path="/login" element={<LoginComponent />} /> {/* Route naar inlogpagina */}
-                                <Route path="/7-day-forecast" element={<SevenDayForecast />} /> {/* Route naar 7-daagse weersvoorspelling */}
-                                <Route path="/signup" element={<SignUpComponent />} /> {/* Route naar aanmeldpagina */}
-                                <Route path="/share" element={<ShareWeatherComponent weatherData="Vandaag wordt het zonnig!" />} /> {/* Route naar weer delen */}
-                                <Route path="/profile" element={<ProfielPageComponent />} /> {/* Route naar profielpagina */}
+                                <Route path="/" element={<HolidayComponent />} />
+                                <Route path="/holidays" element={<HolidayComponent />} />
+                                <Route path="/login" element={<LoginComponent />} />
+                                <Route path="/7-day-forecast" element={<SevenDayForecast />} />
+                                <Route path="/signup" element={<SignUpComponent />} />
+                                <Route path="/share" element={<ShareWeatherComponent weatherData="Vandaag wordt het zonnig!" />} />
+                                <Route path="/profile" element={<ProfielPageComponent />} />
                             </Routes>
                         </div>
                     </div>

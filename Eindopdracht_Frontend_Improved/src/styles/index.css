@@ -1,16 +1,13 @@
-/* Verwijdert standaard marges van het body-element */
 body {
     margin: 0;
 }
 
-/* Stelt de layout van de app in */
 .App {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Stijl voor de koptekst van de app */
 .App-header {
     text-align: left;
     padding: 40px;
@@ -19,7 +16,6 @@ body {
     color: #0df541;
 }
 
-/* Stijl voor de content wrapper */
 .content-wrapper {
     display: flex;
     justify-content: left;
@@ -28,36 +24,30 @@ body {
     padding: 0;
 }
 
-/* Stijl voor de container van notities en weer */
 .notes-weather-container {
     display: flex;
     width: 70%;
     margin-left: -20px;
 }
 
-/* Verdeelt de beschikbare ruimte tussen notities en het weer */
 .notes-weather-container > * {
     flex: 1;
     margin-right: 20px;
 }
 
-/* Geen margeruimte aan de rechterkant voor het laatste element */
 .notes-weather-container > *:last-child {
     margin-right: 0;
 }
 
-/* Maximale breedte voor notities */
 .notes-weather-container > *:first-child {
     max-width: 1000px;
 }
 
-/* Stijl voor het tekstvak van notities */
 .notes-weather-container textarea {
     width: 50%;
     min-height: 100px;
 }
 
-/* Stijl voor de navigatielijst */
 .navbar-list {
     display: flex;
     flex-direction: row;
@@ -67,7 +57,6 @@ body {
     width: 100%;
 }
 
-/* Stijl voor navigatieknoppen */
 .navbar-button {
     text-decoration: none;
     display: flex;
@@ -81,77 +70,63 @@ body {
     margin-top: -25px;
 }
 
-/* Achtergrondkleur veranderen bij hover */
 .navbar-button:hover {
     background-color: #f0f0f0;
 }
 
-/* Stijl voor de span binnen navigatieknoppen */
 .navbar-button span {
     margin-left: 8px;
 }
 
-/* Verwijder focus outline van navigatieknoppen */
 .navbar-button:focus {
     outline: none;
 }
 
-/* Stijl voor het stedenselectie-element */
 #city-select {
     margin-top: 15px;
     background-color: #0df541;
     font-size: 16px;
 }
 
-/* Marge voor navigatie-inhoud */
 .navigatie-inhoud {
     margin-top: 60px;
 }
 
-/* Marge voor login-inhoud */
 .login-inhoud {
     margin-top: 38px;
 }
 
-/* Marge voor zevendagen-inhoud */
 .zevendagen-inhoud {
     margin-top: 38px;
 }
 
-/* Marge voor registreren-inhoud */
 .registreren-inhoud {
     margin-top: 38px;
 }
 
-/* Marge voor share-inhoud */
 .share-inhoud {
     margin-top: 38px;
 }
 
-/* Marge voor profiel-inhoud */
 .profiel-inhoud {
     margin-top: 38px;
 }
 
-/* Stijl voor knoppen in weerwidget */
 .weather-widget button {
     background-color: #0df541;
     color: white;
 }
 
-/* Stijl voor jaar invoerveld */
 .year-input {
     background-color: #0df541;
     font-size: 16px;
     margin-left: 1px;
 }
 
-/* Verplaats de groene puntjes iets naar links */
 ul {
-    list-style: none; /* Verwijdert standaard opsommingstekens */
+    list-style: none;
 }
 
-/* Voeg een groen bolletje toe voor elk lijstpunt */
 li::before {
     content: "•";
     color: #0df541;
@@ -160,18 +135,16 @@ li::before {
     margin-left: -2.4em;
 }
 
-/* Stijl voor inzendingknop in login-inhoud */
+
 .login-inhoud button[type="submit"] {
     background-color: #0df541;
     color: white;
 }
 
-/* Stijl voor notitietekstvelden */
 .note-textarea {
     overflow-wrap: break-word;
 }
 
-/* Stijl voor geselecteerde stad */
 .selected-city {
     margin-top: 5px;
     background-color: #0df541;
@@ -185,41 +158,35 @@ li::before {
     z-index: 1;
 }
 
-/* Achtergrondkleur veranderen bij hover voor geselecteerde stad */
 .selected-city:hover {
     background-color: #0abf2d;
 }
 
-/* Stijl voor tabellen */
 table {
     width: 95%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-/* Stijl voor tabelkoppen */
 thead {
     background-color: #0df541;
     color: white;
 }
 
-/* Stijl voor tabelkoppen en cellen */
 th, td {
     padding: 3px;
     text-align: left;
 }
 
-/* Achtergrondkleur veranderen bij hover voor tabelcellen en -koppen */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Verwijdert achtergrondkleur bij hover voor tabelcellen en -koppen */
+
 th:hover, td:hover {
     background-color: inherit;
 }
 
-/* Stijl voor groene knoppen */
 .green-button {
     background-color: #0df541;
     color: white;
@@ -230,7 +197,6 @@ th:hover, td:hover {
     font-size: 10px;
 }
 
-/* Stijl voor aangepaste bestandsinvoer */
 .custom-file-input {
     background-color: #0df541;
     color: white;
@@ -241,7 +207,6 @@ th:hover, td:hover {
     font-size: 10px;
 }
 
-/* Stijl voor aangepaste inzendknop */
 .custom-submit-button {
     background-color: #0df541;
     color: white;
@@ -252,7 +217,6 @@ th:hover, td:hover {
     font-size: 10px;
 }
 
-/* Stijl voor groene invoervelden */
 .green-input {
     background-color: #0df541;
     color: white;
@@ -263,7 +227,6 @@ th:hover, td:hover {
 
 }
 
-/* Stijl voor meldingen */
 .notification {
     position: fixed;
     top: -1px;
@@ -275,12 +238,10 @@ th:hover, td:hover {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
 }
 
-/* Knipperende animatie voor meldingen */
 .flashing {
     animation: blink 0.7s infinite alternate;
 }
 
-/* Keyframes voor de knipperende animatie */
 @keyframes blink {
     from {
         opacity: 1;

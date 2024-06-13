@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { UserContext } from '../Auth/gebruikersauthenticatiegegevens';
 
-// Definieert de functionele component ProfielPageComponent
 const ProfielPageComponent = () => {
     const { userData, updateUser } = useContext(UserContext);
     const [formData, setFormData] = useState(userData || {
@@ -18,8 +17,8 @@ const ProfielPageComponent = () => {
         profielfoto: null,
 
     });
-    const [successMessage, setSuccessMessage] = useState(''); // Staat voor het succesbericht na bijwerken van het profiel
-    const [errors, setErrors] = useState({ // Staat voor validatiefouten van het formulier
+    const [successMessage, setSuccessMessage] = useState('');
+    const [errors, setErrors] = useState({
         wachtwoord: '',
         herhaalWachtwoord: '',
         postcode: '',
@@ -27,9 +26,8 @@ const ProfielPageComponent = () => {
         telefoonnummer: '',
     });
 
-    // Effect-hook om het formulier opnieuw in te stellen wanneer de userData verandert
     useEffect(() => {
-        setFormData(userData || { // Als userData bestaat, stel het in, anders gebruik standaardwaarden
+        setFormData(userData || {
             gebruikersnaam: '',
             email: '',
             wachtwoord: '',
@@ -44,60 +42,55 @@ const ProfielPageComponent = () => {
         });
     }, [userData]);
 
-    // Functie om het formulier te valideren
     const validateForm = () => {
         const newErrors = {};
 
-        if (formData.wachtwoord.length < 8) {  // Controleert of wachtwoord minimaal 8 tekens heeft
+        if (formData.wachtwoord.length < 8) {
             newErrors.wachtwoord = 'Wachtwoord moet minimaal 8 karakters bevatten, met letters, cijfers en een leesteken.';
         }
 
-        if (formData.wachtwoord !== formData.herhaalWachtwoord) { // Controleert of wachtwoord en herhaalwachtwoord overeenkomen
+        if (formData.wachtwoord !== formData.herhaalWachtwoord) {
             newErrors.herhaalWachtwoord = 'Wachtwoord en herhaal wachtwoord komen niet overeen.';
         }
 
-        if (!/^[0-9]{4}[a-zA-Z]{2}$/.test(formData.postcode)) { // Controleert de postcode op het juiste formaat
+        if (!/^[0-9]{4}[a-zA-Z]{2}$/.test(formData.postcode)) {
             newErrors.postcode = 'Postcode moet 4 cijfers bevatten, gevolgd door 2 letters.';
         }
 
-        if (!/^\S+@\S+\.\S+$/.test(formData.email)) { // Controleert of e-mailadres een geldig formaat heeft
+        if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
             newErrors.email = 'Voer een geldig e-mailadres in.';
         }
 
-        if (!/^[0-9]{10}$/.test(formData.telefoonnummer)) { // Controleert of telefoonnummer 10 cijfers heeft
+        if (!/^[0-9]{10}$/.test(formData.telefoonnummer)) {
             newErrors.telefoonnummer = 'Voer een geldig telefoonnummer in (10 cijfers).';
         }
 
-        setErrors(newErrors); // Stelt de fouten in
+        setErrors(newErrors);
 
-        return Object.keys(newErrors).length === 0; // Geeft true terug als er geen fouten zijn
+        return Object.keys(newErrors).length === 0;
     };
 
-    // Functie om veranderingen in invoervelden bij te houden
     const handleInputChange = (e) => {
-        const { name, value } = e.target; // Haalt naam en waarde op van het invoerveld
-        setFormData({ ...formData, [name]: value }); // Werkt de formData bij met de nieuwe waarde
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
     };
 
-    // Functie om veranderingen in het profielfoto-bestand bij te houden
     const handleFileChange = (e) => {
         const file = e.target.files[0];
         setFormData({ ...formData, profielfoto: file });
     };
 
-    // Functie om een profielfoto te verwijderen
     const handleRemovePhoto = () => {
-        setFormData({ ...formData, profielfoto: null }); // Verwijdert de profielfoto door deze op null te zetten
+        setFormData({ ...formData, profielfoto: null });
     };
 
-    // Functie om het gebruikersprofiel bij te werken
     const handleUpdateProfile = (e) => {
         e.preventDefault();
 
-        if (validateForm()) { // Als het formulier geldig is
+        if (validateForm()) {
             updateUser(formData);
             setSuccessMessage('Uw gegevens zijn succesvol gewijzigd!');
-            setErrors({ // Reset de fouten
+            setErrors({
                 wachtwoord: '',
                 herhaalWachtwoord: '',
                 postcode: '',
@@ -107,7 +100,6 @@ const ProfielPageComponent = () => {
         }
     };
 
-    // JSX voor het renderen van de gebruikersprofielpagina
     return(
         <div className="profiel-inhoud">
             <h2>Gebruikersprofiel</h2>

@@ -41,11 +41,9 @@ const NoteItem = ({ note, onDeleteNote }) => {
 };
 
 const NotesSidebar = () => {
-    // State voor huidige notitie en alle notities
     const [note, setNote] = useState("");
     const [notes, setNotes] = useState([]);
 
-    // Functie om een nieuwe notitie toe te voegen
     const handleAddNote = () => {
         if (note.trim() !== "") {
             setNotes([...notes, note]);
@@ -53,7 +51,6 @@ const NotesSidebar = () => {
         }
     };
 
-    // Functie om een notitie te verwijderen op basis van index
     const handleDeleteNote = (index) => {
         const updatedNotes = [...notes];
         updatedNotes.splice(index, 1);
@@ -72,11 +69,9 @@ const NotesSidebar = () => {
                 }}
             >
                 <div style={{ marginBottom: "20px" }}>
-                    {/* Header voor notities */}
                     <h2 style={{ marginRight: "400px", marginLeft: "6px" }}>
                         Notities
                     </h2>
-                    {/* Textarea voor het toevoegen van nieuwe notities */}
                     <div
                         style={{
                             position: "relative",
@@ -92,7 +87,6 @@ const NotesSidebar = () => {
                             style={{ width: "100%", overflowX: "hidden", border: "2px solid #0df541", borderRadius: "5px", padding: "5px" }}
                         />
                     </div>
-                    {/* Knop om een notitie toe te voegen */}
                     <button
                         onClick={handleAddNote}
                         style={{
@@ -110,11 +104,9 @@ const NotesSidebar = () => {
                     </button>
                 </div>
                 <div style={{ overflowY: "auto" }}>
-                    {/* Header voor weergave van notities */}
                     <h2 style={{ marginRight: "100px", marginLeft: "6px" }}>
                         Weergeven notities
                     </h2>
-                    {/* Lijst met weergegeven notities */}
                     <div style={{ paddingLeft: "0", marginLeft: "6px" }}>
                         {notes.map((note, index) => (
                             <NoteItem

@@ -5,7 +5,7 @@ fetch('https://api.datavortex.nl/NOVI Educational Backend/users', {
         'Content-Type': 'application/json',
         'X-Api-Key': 'eindopdracht:3A0QHhPmag2XQ02xb2U3'
     },
-    body: JSON.stringify({ // Zet de gebruikersgegevens om naar JSON-formaat en stelt deze in als het lichaam van het verzoek
+    body: JSON.stringify({
         naam: 'Bart Smit',
         leeftijd: 42,
         email: 'bartsmit@example.com',
@@ -15,7 +15,7 @@ fetch('https://api.datavortex.nl/NOVI Educational Backend/users', {
         tijdzone: 'Europe/Amsterdam'
     })
 })
-    .then(response => response.json()) // Verwerkt de JSON-reactie van de server
+    .then(response => response.json())
     .then(data => {
         console.log(data);
     })
