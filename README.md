@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Installatiehandleiding
 
 ## Inhoudsgave
@@ -171,6 +170,4 @@ Deze npm commando's kan je invoeren in de terminal voor eventueel gebruik.
 
 ## Link naar Github repository
 https://github.com/RickvanCampen/Eindopracht_Frontend_Improved
-=======
 
->>>>>>> origin/main
