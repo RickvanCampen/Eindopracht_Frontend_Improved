@@ -1,0 +1,21 @@
+.weather-alert {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+.alert-message {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.alert-message p {
+    margin: 0;
+}
+
+.alert-message p:first-child {
+    font-weight: bold;
+}

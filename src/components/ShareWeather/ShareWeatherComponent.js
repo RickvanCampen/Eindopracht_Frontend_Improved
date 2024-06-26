@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './ShareWeather.css';
+
 
 const ShareWeatherComponent = () => {
     const [weatherData, setWeatherData] = useState('');

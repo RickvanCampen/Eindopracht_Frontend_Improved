@@ -83,7 +83,7 @@ of Microsoft Edge om de applicatie te bekijken en te gebruiken.
 uitvoeren van JavaScript-code buiten de webbrowser. Hierbij gaat het eigenlijk om het opzetten 
 van de backend van je applicatie.
 - API-sleutel: Voor het ophalen van weerinformatie heeft de applicatie een API-sleutel nodig.
-Gebruik de volgende API-sleutel: 3a2264d0493409e7783a9d88503f6c2d.
+Gebruik de volgende API-sleutel: jouw-api-key.
 - NPM of Yarn: Zorg ervoor dat je Node Package Manager (NPM) of Yarn hebt geïnstalleerd, 
 afhankelijk van je voorkeur. Deze tools worden gebruikt om pakketten en afhankelijkheden voor 
 je project te installeren, bij te werken en te beheren.

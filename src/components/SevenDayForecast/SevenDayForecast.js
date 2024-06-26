@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { dutchCities } from '../../Helper_Functie/Steden_en_Dorpen';
+import './SevenDayForecast.css';
 
 const SevenDayForecast = () => {
     const [weatherData, setWeatherData] = useState(null);

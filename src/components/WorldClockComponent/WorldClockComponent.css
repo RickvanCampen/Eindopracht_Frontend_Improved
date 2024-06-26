@@ -1,0 +1,22 @@
+.timezone-select-container {
+    margin-top: 20px;
+}
+
+.timezone-select {
+    padding: 10px;
+    font-size: 11px;
+    width: 150px;
+    background-color: #0df541;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.timezone-select option {
+    background-color: white;
+    color: #0df541;
+}
+
+.current-time {
+    margin-top: 20px;
+}

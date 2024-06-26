@@ -1,0 +1,122 @@
+.city-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.city-list-item {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.city-list-item::before {
+    content: "●";
+    color: #0df541;
+    font-size: 14px;
+    position: absolute;
+    left: 33px;
+}
+
+.city-list-item button {
+    background-color: #0df541;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.city-list-item button:hover {
+    background-color: #0aa432;
+}
+
+.city-select-container {
+    margin-top: 20px;
+}
+
+.city-select-container label {
+    margin-right: 10px;
+}
+
+.city-select-container select {
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+}
+.city-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.city-list-item {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.city-list-item::before {
+    content: "●";
+    color: #0df541;
+    font-size: 14px;
+    position: absolute;
+    left: 33px;
+}
+
+.city-list-item button {
+    background-color: #0df541;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.city-list-item button:hover {
+    background-color: #0aa432;
+}
+
+.city-select-container {
+    margin-top: 20px;
+    position: relative;
+}
+
+.city-select-container label {
+    margin-right: 10px;
+}
+
+.city-select-container select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.city-select-container .add-city-button {
+    background-color: #0df541;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    position: Relative;
+    bottom: -30px;
+    right: 0;
+}
+
+.city-select-container .add-city-button:hover {
+    background-color: #0aa432;
+}
+
+.city-select-container button {
+    background-color: #0df541;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.city-select-container button:hover {
+    background-color: #0aa432;
+}

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/index.css';
 import { dutchCities } from '../../Helper_Functie/Steden_en_Dorpen';
+import './Weather.css';
+
 const WeatherComponent = () => {
     const [weatherData, setWeatherData] = useState(null);
     const [city, setCity] = useState("Tilburg");

@@ -1,4 +1,3 @@
-// Voert een HTTP POST-verzoek uit naar de opgegeven URL om een gebruiker te authenticeren
 fetch('https://api.datavortex.nl/testapp/users/authenticate', {
     method: 'POST', // Methode: POST
     headers: {

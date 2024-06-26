@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import translateHolidayName from '../../Helper_Functie/Vertaling_Feestdagen';
+import './Holiday.css';
 
 const HolidayComponent = () => {
     const [holidays, setHolidays] = useState([]);
